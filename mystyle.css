@@ -1,0 +1,915 @@
+/* ======================================
+   GLOBAL RESET & BASE STYLES
+   ====================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ======================================
+     NAVIGATION BAR
+     ====================================== */
+  .navbar {
+    background-color: #004aad;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffd43b;
+  }
+  
+  
+  
+  /* ======================================
+     HERO SECTION
+     ====================================== */
+     .hero {
+        background: url('../kazihero-bg.jpg') center/cover no-repeat;
+        color: white;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .hero-content {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 2rem;
+        border-radius: 10px;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .btn {
+        background-color: #ffcc00;
+        color: #004aad;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .btn:hover {
+        background-color: #ffd633;
+      }
+      
+      
+  /* ======================================
+     JOB LISTINGS PAGE
+     ====================================== */
+  .jobs-section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .jobs-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #004aad;
+    font-size: 2rem;
+  }
+  
+  .job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card h3 {
+    color: #004aad;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  
+  .job-card p {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .job-card .view-btn {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .job-card .view-btn:hover {
+    background-color: #0066ff;
+  }
+  
+  /* ======================================
+     JOB DETAILS PAGE
+     ====================================== */
+  .job-detail-section {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .job-detail-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+  
+  .job-detail-card h2 {
+    color: #004aad;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .job-detail-card p {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .job-detail-card hr {
+    margin: 1rem 0;
+  }
+  
+  .full-description {
+    margin-top: 1rem;
+    color: #333;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* ======================================
+     ADMIN DASHBOARD
+     ====================================== */
+  .admin-section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .admin-section h2 {
+    color: #004aad;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-form input,
+  .admin-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .admin-form button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-form button:hover {
+    background-color: #0066ff;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #004aad;
+    color: white;
+  }
+  
+  /* ======================================
+     CONTACT / GENERAL FORMS
+     ====================================== */
+  .contact-section {
+    padding: 3rem 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .contact-section form input,
+  .contact-section form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-section form button {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .contact-section form button:hover {
+    background-color: #0066ff;
+  }
+  
+  /* ======================================
+     FOOTER
+     ====================================== */
+  footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* ======================================
+     RESPONSIVE DESIGN
+     ====================================== */
+  
+  /* LARGE SCREENS (DESKTOP 1200px+) */
+  @media (min-width: 1200px) {
+    .hero h1 {
+      font-size: 3.2rem;
+    }
+  
+    .job-detail-card h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* MEDIUM SCREENS (LAPTOPS 992px–1199px) */
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .navbar ul {
+      gap: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  /* TABLETS (768px–991px) */
+  @media (max-width: 991px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .jobs-section {
+      padding: 2rem 1rem;
+    }
+  
+    .admin-section {
+      padding: 1rem;
+    }
+  
+    .job-detail-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* SMALL SCREENS (PHONES 576px–767px) */
+  @media (max-width: 767px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .job-card {
+      padding: 1.2rem;
+    }
+  
+    .apply-btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .admin-table th,
+    .admin-table td {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* EXTRA SMALL (≤575px) */
+  @media (max-width: 575px) {
+    .navbar .logo {
+      font-size: 1.3rem;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .job-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .job-card p {
+      font-size: 0.9rem;
+    }/* ================= LOGIN PAGE ================= */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .login-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .login-card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0078d7;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-card button:hover {
+    background-color: #005fa3;
+  }
+  
+  .login-card .msg {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* ================= LOGOUT BUTTON ================= */
+  .logout-btn {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background: #c1121f;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 768px) {
+    .login-card {
+      padding: 1.5rem;
+    }
+  
+    .login-card input,
+    .login-card button {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 1rem;
+    }
+  
+    .login-card h2 {
+      font-size: 20px;
+    }
+  }
+  
+  }
+  /* ================= ADMIN LOGIN PAGE ================= */
+
+.admin-login {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #004e92, #000428);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px 35px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.8s ease;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .login-container input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-container input::placeholder {
+    color: #e0e0e0;
+  }
+  
+  .login-container input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-container button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: translateY(-2px);
+  }
+  
+  #msg {
+    margin-top: 15px;
+    font-size: 0.95em;
+    font-weight: 500;
+  }
+  
+  /* ================= MEDIA QUERIES ================= */
+  
+  @media (max-width: 768px) {
+    .login-container {
+      width: 85%;
+      padding: 30px 25px;
+    }
+  
+    .login-container h2 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 25px 20px;
+    }
+  
+    .login-container input,
+    .login-container button {
+      padding: 10px 12px;
+      font-size: 0.95em;
+    }
+  }
+  
+  /* Simple fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #adminLink {
+    display: none;
+  }
+ /* ===== CONTACT PAGE STYLING ===== */
+
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url('../images/contact-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+  
+  .contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    color: #004aad;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #004aad;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    background: #004aad;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #005be0;
+  }
+  
+  #form-status {
+    margin-top: 10px;
+    color: green;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .map iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  /* Thank You Page */
+.thank-you-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f9f9f9;
+  }
+  
+  .thank-you-section h1 {
+    font-size: 2.5em;
+    color: #2b7a78;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-section p {
+    color: #444;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-section .btn {
+    background-color: #2b7a78;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .thank-you-section .btn:hover {
+    background-color: #205d5b;
+  }
+  /* ==============================
+   WhatsApp Floating Chat Button
+============================== */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    z-index: 99999; /* ✅ make sure it sits on top */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+  }
+  
+  /* Chat Popup */
+  .chat-popup {
+    position: fixed;
+    bottom: 110px;
+    right: 25px;
+    background: #fff;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    animation: fadeInUp 0.4s ease;
+  }
+  
+  .chat-header {
+    background-color: #25D366;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chat-header i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .chat-header span {
+    flex: 1;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .chat-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Chat body */
+  .chat-body {
+    padding: 15px;
+    height: 200px;
+    overflow-y: auto;
+    background: #f9f9f9;
+  }
+  
+  .bot-msg {
+    background-color: #e2ffc7;
+    color: #333;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    max-width: 85%;
+    animation: fadeIn 0.5s ease;
+  }
+  .typing {
+    font-style: italic;
+    color: #666;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  
+  /* Chat input area */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .chat-input textarea {
+    flex: 1;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 15px;
+    height: 45px;
+    margin-right: 10px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .chat-input textarea:focus {
+    border-color: #25D366;
+    outline: none;
+  }
+  
+  /* WhatsApp-style send button */
+  .chat-input button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chat-input button:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+  }
+  
+  .chat-input button i {
+    transform: rotate(45deg);
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  

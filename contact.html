@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | KaziShop</title>
+    <meta
+      name="description"
+      content="Contact KaziShop for job listings, partnerships, or support. We're here to help you find or post jobs easily across Kenya."
+    />
+    <link rel="canonical" href="https://www.kazishop.co.ke/contact.html" />
+     <meta name="robots" content="index, follow" />
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+   />
+   
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo">KaziShop</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="request-resume.html">Request Resume</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero contact-hero">
+      <div class="hero-content">
+        <h1>Contact KaziShop</h1>
+        <p>We’d love to hear from you. Whether you’re a job seeker, employer, or partner, feel free to reach out.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p><strong>Email:</strong> support@kazishop.co.ke</p>
+          <p><strong>Phone:</strong> +254 795 828 952</p>
+          <p><strong>Office:</strong> Nairobi, Kenya</p>
+          <p>We typically respond within 24 hours (Mon–Fri).</p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send a Message</h2>
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2ca59cc6-3cac-42b8-b9a6-9181a20c4602" />
+            <input type="hidden" name="redirect" value="https://http://127.0.0.1:5500/thank-you.html" />
+
+  
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Full Name" required />
+            </div>
+  
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email Address" required />
+            </div>
+  
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required />
+            </div>
+  
+            <div class="form-group">
+              <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+  
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-status"></p>
+          </form>
+          <p id="form-status"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map (Optional) -->
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps?q=Nairobi,Kenya&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 KaziShop. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External Script -->
+    <script src="tech.js"></script>
+    <!-- Floating WhatsApp Icon -->
+<div class="whatsapp-icon" id="openChat">
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+  
+  <!-- WhatsApp Chat Popup -->
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>support team</span>
+      <button id="closeChat">&times;</button>
+    </div>
+  
+    <div class="chat-body" id="chatBody">
+      <p class="bot-msg">👋 Hello! How can we help you today?</p>
+      <p class="bot-msg">💬 You can type your message below and click send.</p>
+    </div>
+  
+    <div class="chat-input">
+      <textarea id="whatsappMessage" placeholder="Type your message..."></textarea>
+      <button id="sendWhatsapp">
+        <i class="fa fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+  
+  </body>
+</html>
+  
