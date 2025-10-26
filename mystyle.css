@@ -60,7 +60,7 @@
      HERO SECTION
      ====================================== */
      .hero {
-        background: url('../kazihero-bg.jpg') center/cover no-repeat;
+        background: url('kazihero-bg.jpg') center/cover no-repeat;
         color: white;
         height: 70vh;
         display: flex;
@@ -912,4 +912,5 @@
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
   
